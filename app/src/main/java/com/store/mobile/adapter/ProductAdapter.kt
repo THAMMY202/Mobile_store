@@ -26,6 +26,7 @@ class ProductAdapter(var products: List<ProductModel>) :
         Glide.with(holder.binding.root.context)
             .load(currentItem.image)
             .into(holder.binding.productImage)
+
     }
 
     override fun getItemCount(): Int = products.size
